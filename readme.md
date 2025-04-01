@@ -62,3 +62,22 @@ thai-id-card-reader - npm
 ## For Running Service windows (Set Path Want to collect this data and must be not move)
 
 node service.js
+
+## Uninstallation
+
+To uninstall the IdCardReaderService, follow these steps:
+
+<!-- 1. **Open a command prompt or PowerShell as administrator.**
+2. **Navigate to the directory containing `uninstall_service.js` and `IdCardReaderServiceWindows11.exe`.**
+3. **Run the following command:**
+
+    ```bash
+    node uninstall_service.js
+    ``` 
+**Important:** Ensure you have Node.js installed.
+-->
+
+1. Run service.msc or sersearch services and open app
+2. Find BS Thai Smart Card Reader Service and stop
+3. go to Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bsthaismartcardreaderservice.exe and delete
+4. restart Computer

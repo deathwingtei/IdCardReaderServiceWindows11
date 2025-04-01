@@ -1,7 +1,7 @@
 {
   "name": "thai-smartcard-service",
   "version": "1.0.0",
-  "description": "",
+  "description": "ดาวน์โหลด โปรแกรม ได้ที่นี่ https://software.thaiware.com/11913-Siam-ID-Download.html\r ดาวน์โหลด ไดรเวอร์ ได้ที่นี่ https://zoweetek.cn/wp-content/uploads/2017/10/9540-V2.zip\r ดาวน์โหลดไฟล์ SDK สำหรับผู้นักพัฒนาโปรแกรม https://zoweetek.cn/wp-content/uploads/2018/05/AU-9540-demotool.zip\r โปรแกรมทดลอง เครื่องอ่านบัตร ZOWEETEK https://zoweetek.cn/wp-content/uploads/2018/07/Smart-card-reader-test-software.zip",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,9 @@
     "express": "^4.21.2",
     "node-windows": "^1.0.0-beta.8",
     "thai-id-card-reader": "^1.0.51"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gablitv2.winservecorp.co.th/blueocean-projects/nsm/thaiIdReader.git"
   }
 }
