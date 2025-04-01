@@ -7,9 +7,21 @@ const svc = new Service({
   script: path.join(__dirname, "app.js"),
 });
 
-svc.on("install", function () {
-  svc.start();
-  console.log("Service installed and started.");
-});
+console.log("Service Loading.");
+try {
+  svc.on("install", function () {
+    svc.start();
+    console.log("Service installed and started.");
+  });
+} catch (error) {
+  console.error("Error in app.js:", error);
+  // Log the error to a file for better debugging
+  const fs = require("fs");
+  fs.appendFileSync(
+    "service_errors.log",
+    `${new Date().toISOString()} - ${error.stack}\n`
+  );
+  process.exit(1); // Exit with an error code
+}
 
 svc.install();
